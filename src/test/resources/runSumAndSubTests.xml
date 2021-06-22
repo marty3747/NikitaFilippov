@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sum And Sub Tests Suite">
+  <test verbose="2" name="Addition and Subtraction Tests">
+    <classes>
+      <class name="ru.training.at.hw1.tests.TestSum"/>
+      <class name="ru.training.at.hw1.tests.TestSub"/>
+    </classes>
+  </test>
+</suite>

@@ -24,6 +24,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>${checkstyle.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -102,6 +108,7 @@
     </profiles>
 
     <properties>
+        <checkstyle.version>8.42</checkstyle.version>
         <testng.version>7.4.0</testng.version>
         <maven.compiler.source>13</maven.compiler.source>
         <maven.compiler.target>13</maven.compiler.target>

@@ -12,7 +12,7 @@
         <dependency>
             <groupId>com.epam.tat.module4</groupId>
             <artifactId>calculator</artifactId>
-            <version>1.0</version>
+            <version>${calculator.version}</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/resources/calculator-1.0.jar</systemPath>
         </dependency>

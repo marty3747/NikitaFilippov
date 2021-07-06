@@ -9,16 +9,16 @@ import org.openqa.selenium.support.ui.Select;
 public class DifferentElementsPage extends AbstractPage {
 
     @FindBy(css = "input[type='checkbox']")
-    private List<WebElement> listOfCheckboxes;
+    public List<WebElement> listOfCheckboxes;
 
     @FindBy(css = "input[type = 'radio']")
-    private List<WebElement> listOfRadioButtons;
+    public List<WebElement> listOfRadioButtons;
 
     @FindBy(css = "select.uui-form-element")
-    private WebElement dropdown;
+    public WebElement dropdown;
 
     @FindBy(css = ".logs >li")
-    private List<WebElement> listOfLogs;
+    public List<WebElement> listOfLogs;
 
     public DifferentElementsPage(WebDriver webDriver) {
         super(webDriver);

@@ -25,10 +25,8 @@ public class BaseClass {
         webDriver.navigate().to(TestData.URL);
         originalHandle = webDriver.getWindowHandle();
 
-
         //2.Assert browser title
         Assert.assertEquals(webDriver.getTitle(), TestData.HOME_PAGE_TITLE);
-
 
         //3.Perform login for log in
         webDriver.findElement(By.id("user-icon")).click();

@@ -140,7 +140,7 @@
                     <version>${maven.surefire.version}</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>${allTestsHomework4XML}</suiteXmlFile>
+                            <suiteXmlFile>${testng.suite.file}</suiteXmlFile>
                         </suiteXmlFiles>
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -283,13 +283,13 @@
     </reporting>
 
     <properties>
-        <allure.version>2.13.2</allure.version>
+        <allure.version>2.14.0</allure.version>
         <java.version>11</java.version>
         <slf4j-simple.version>1.7.30</slf4j-simple.version>
         <allure-testng.version>2.13.2</allure-testng.version>
         <allure.plugin.version>2.10.0</allure.plugin.version>
         <allure-maven.version>2.10.0</allure-maven.version>
-        <aspectj.version>1.9.5</aspectj.version>
+        <aspectj.version>1.9.6</aspectj.version>
         <assertj.version>3.19.0</assertj.version>
         <checkstyle.version>8.42</checkstyle.version>
         <webdriver-factory.version>4.3</webdriver-factory.version>
@@ -299,6 +299,7 @@
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
         <maven.compiler.target>11</maven.compiler.target>
         <commons-lang3.version>3.12.0</commons-lang3.version>
+        <testng.configs.path.hw4>${project.basedir}/src/test/java/ru/training/at/hw4/resources</testng.configs.path.hw4><testng.suite.file/>
         <allTestsHomework2XML>src/test/resources/runAllTestsForHomeWork2.xml</allTestsHomework2XML>
         <allTestsHomework3XML>src/test/resources/runAllTestsForHomeWork3.xml</allTestsHomework3XML>
         <allTestsHomework4XML>src/test/resources/runAllTestsForHomeWork4.xml</allTestsHomework4XML>

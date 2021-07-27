@@ -31,7 +31,6 @@
         <allTestsHomework2XML>src/test/resources/runAllTestsForHomeWork2.xml</allTestsHomework2XML>
         <allTestsHomework3XML>src/test/resources/runAllTestsForHomeWork3.xml</allTestsHomework3XML>
         <allTestsHomework4XML>src/test/resources/runAllTestsForHomeWork4.xml</allTestsHomework4XML>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     </properties>
 
     <dependencies>
@@ -126,7 +125,7 @@
                     </configuration>
                     <executions>
                         <execution>
-                            <id>validate</id>
+                            <id>checkstyle</id>
                             <phase>validate</phase>
                             <goals>
                                 <goal>check</goal>
@@ -208,16 +207,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>9</source>
-                    <target>9</target>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
 
     <profiles>

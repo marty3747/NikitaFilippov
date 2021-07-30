@@ -10,7 +10,7 @@ import org.testng.ITestResult;
 public class Listener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
-        WebDriver webDriver = (WebDriver) result.getTestContext().getAttribute("webdriver");
+        WebDriver webDriver = (WebDriver) result.getTestContext().getAttribute("driver");
         attachScreenshot(webDriver);
     }
 

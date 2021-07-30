@@ -2,11 +2,15 @@ package ru.training.at.hw4.tests;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import java.sql.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import ru.training.at.hw2.data.TestData;
 import ru.training.at.hw4.pages.DifferentElementsPage;
 import ru.training.at.hw4.pages.HomePage;
@@ -23,16 +27,23 @@ import ru.training.at.hw4.tests.steps.LoggedInHomePageSteps;
 public class BaseClass {
 
     protected WebDriver webDriver;
-    protected LoginPage loginPage;
     protected String originalWindowHandle;
+    protected LoginPage loginPage;
     protected DifferentElementsPage differentElementsPage;
     protected HomePage homePage;
 
     @org.testng.annotations.BeforeClass
-    public void beforeMethod() {
+    public void initializer(ITestContext testContext) {
+        webDriver = BeforeClass.createWebDriver();
+        originalWindowHandle = webDriver.getWindowHandle();
+        homePage = new HomePage(webDriver);
+        differentElementsPage = new DifferentElementsPage(webDriver);
+        homePage.openHomePage();
+        testContext.setAttribute("driver", webDriver);
+        beforeMethod();
+    }
 
-        //1.Start home page and initialize home page elements
-        initializer();
+    public void beforeMethod() {
 
         //2.Assert browser title
         assertBrowserTitle();
@@ -42,14 +53,6 @@ public class BaseClass {
 
         //4.Assert Username is logged
         assertUsername();
-    }
-
-    public void initializer() {
-        webDriver = BeforeClass.createWebDriver();
-        originalWindowHandle = webDriver.getWindowHandle();
-        homePage = new HomePage(webDriver);
-        differentElementsPage = new DifferentElementsPage(webDriver);
-        homePage.openHomePage();
     }
 
     public void assertBrowserTitle() {

@@ -16,6 +16,4 @@ public class BeforeClass {
         webDriver.manage().window().maximize();
         return webDriver;
     }
-
-
 }

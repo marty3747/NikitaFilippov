@@ -10,8 +10,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>1.7</maven.compiler.target>
-        <maven.compiler.source>1.7</maven.compiler.source>
         <testXml>${project.basedir}/src/test/resources/runAllTestsForHomeWork4.xml</testXml>
         <testng.version>7.4.0</testng.version>
         <calculator.version>1.0</calculator.version>

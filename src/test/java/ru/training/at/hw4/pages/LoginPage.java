@@ -28,7 +28,6 @@ public class LoginPage extends AbstractPage {
     @FindBy(css = "ul.sidebar-menu.left > li > a > span")
     private static List<WebElement> listOfLeftSectionButton;
 
-
     @FindBy(xpath = "//a[@class='dropdown-toggle']")
     private static WebElement serviceButton;
 

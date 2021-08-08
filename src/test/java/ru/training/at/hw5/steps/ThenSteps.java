@@ -1,4 +1,4 @@
-package ru.training.at.hw5.tests.listeners.steps;
+package ru.training.at.hw5.steps;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;

@@ -1,4 +1,4 @@
-package ru.training.at.hw5.tests.listeners.steps;
+package ru.training.at.hw5.steps;
 
 import io.cucumber.java.en.When;
 import ru.training.at.hw5.context.TestContext;

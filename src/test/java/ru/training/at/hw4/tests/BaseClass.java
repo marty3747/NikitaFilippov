@@ -16,12 +16,10 @@ import ru.training.at.hw4.pages.DifferentElementsPage;
 import ru.training.at.hw4.pages.HomePage;
 import ru.training.at.hw4.pages.LoginPage;
 import ru.training.at.hw4.projectUtils.BeforeClass;
-import ru.training.at.hw4.tests.listeners.Listener;
 import ru.training.at.hw4.tests.steps.HomePageSteps;
 import ru.training.at.hw4.tests.steps.LoggedInHomePageSteps;
 
 
-@Listeners({Listener.class})
 @Feature("Base test for Exercise #1 and Exercise #2")
 @Story("Testing Home page title logging of the user")
 public class BaseClass {
@@ -33,13 +31,12 @@ public class BaseClass {
     protected HomePage homePage;
 
     @org.testng.annotations.BeforeClass
-    public void initializer(ITestContext testContext) {
+    public void initializer() {
         webDriver = BeforeClass.createWebDriver();
         originalWindowHandle = webDriver.getWindowHandle();
         homePage = new HomePage(webDriver);
         differentElementsPage = new DifferentElementsPage(webDriver);
         homePage.openHomePage();
-        testContext.setAttribute("driver", webDriver);
         beforeMethod();
     }
 

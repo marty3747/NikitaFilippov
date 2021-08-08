@@ -1,4 +1,4 @@
-package ru.training.at.hw4.data;
+package ru.training.at.hw6.data;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,8 +14,8 @@ public class UserData {
         Properties properties = new Properties();
         try {
             properties.load(new FileInputStream(CONFIG_FILENAME));
-        } catch (IOException e) {
-            System.err.println("File not found:" + e.getMessage());
+        } catch (IOException exception) {
+            exception.printStackTrace();
         }
         for (String key : properties.stringPropertyNames()) {
             String value = properties.getProperty(key);

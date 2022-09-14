@@ -1,4 +1,4 @@
-package ru.training.at.hw5.tests.listeners.steps;
+package ru.training.at.hw5.steps;
 
 import io.cucumber.java.en.Given;
 import ru.training.at.hw5.context.TestContext;
@@ -9,7 +9,7 @@ public class GivenSteps {
     HomePage homePage = new HomePage(TestContext.getInstance().getDriver());
 
     @Given("I open JDI GitHub site on {string}")
-    public void openJdiGitHubSite(String expectedTitle) {
+    public void openJdiGitHubSite() {
         homePage.openHomePage();
     }
 

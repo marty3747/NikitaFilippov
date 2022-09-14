@@ -1,4 +1,4 @@
-package ru.training.at.hw5.tests.listeners.steps;
+package ru.training.at.hw5.steps;
 
 import ru.training.at.hw5.context.TestContext;
 import ru.training.at.hw5.pages.DifferentElementsPage;

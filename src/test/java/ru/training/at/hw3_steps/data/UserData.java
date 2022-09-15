@@ -1,4 +1,4 @@
-package ru.training.at.hw3.data;
+package ru.training.at.hw3_steps.data;
 
 import java.io.FileInputStream;
 import java.io.IOException;

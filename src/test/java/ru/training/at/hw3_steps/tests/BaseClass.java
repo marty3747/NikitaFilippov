@@ -1,14 +1,15 @@
-package ru.training.at.hw3.tests;
+package ru.training.at.hw3_steps.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import ru.training.at.hw2.data.TestData;
-import ru.training.at.hw3.pages.DifferentElementsPage;
-import ru.training.at.hw3.pages.HomePage;
-import ru.training.at.hw3.pages.LoginPage;
 import ru.training.at.hw3.projectUtils.BeforeClass;
+import ru.training.at.hw3_steps.pages.DifferentElementsPage;
+import ru.training.at.hw3_steps.pages.HomePage;
+import ru.training.at.hw3_steps.pages.LoginPage;
 
 public class BaseClass {
 
@@ -37,7 +38,7 @@ public class BaseClass {
     public void initializer() {
         webDriver = BeforeClass.createWebDriver();
         originalWindowHandle = webDriver.getWindowHandle();
-        homePage = new HomePage(webDriver);
+        homePage = new ru.training.at.hw3_steps.pages.HomePage(webDriver);
         differentElementsPage = new DifferentElementsPage(webDriver);
         homePage.openHomePage();
     }

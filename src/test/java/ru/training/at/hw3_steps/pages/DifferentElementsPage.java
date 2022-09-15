@@ -1,11 +1,10 @@
-package ru.training.at.hw3.pages;
+package ru.training.at.hw3_steps.pages;
 
+import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
 
 public class DifferentElementsPage extends AbstractPage {
 

@@ -21,7 +21,7 @@
         <selenium-chrome-driver.version>4.0.0-beta-3</selenium-chrome-driver.version>
         <allure-maven.version>2.10.0</allure-maven.version>
         <slf4j-simple.version>1.7.30</slf4j-simple.version>
-        <aspectj.version>1.8.10</aspectj.version>
+        <aspectj.version>1.8.3</aspectj.version>
         <allure-testng.version>2.13.10</allure-testng.version>
         <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
         <webdrivermanager.version>4.4.3</webdrivermanager.version>
@@ -108,6 +108,13 @@
         </dependency>
 
         <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.12.1.GA</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>
@@ -117,6 +124,12 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
             <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
@@ -329,15 +342,9 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
-                        <version>${maven-surefire-plugin.version}</version>
                         <configuration>
-                            <argLine>
-                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                                -Dcucumber.options="--plugin io.qameta.allure.cucumber5jvm.AllureCucumber5JvmO"
-                            </argLine>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>${allTestsHomework5XML}</suiteXmlFile>
-                            </suiteXmlFiles>
+                            <forkMode>once</forkMode>
+                            <argLine>-noverify</argLine>
                         </configuration>
                         <dependencies>
                             <dependency>

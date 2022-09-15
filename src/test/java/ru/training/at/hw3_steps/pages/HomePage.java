@@ -1,11 +1,11 @@
-package ru.training.at.hw3.pages;
+package ru.training.at.hw3_steps.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.training.at.hw3.data.TestData;
-import ru.training.at.hw3.model.User;
-import ru.training.at.hw3.projectUtils.CreateUser;
+import ru.training.at.hw3_steps.data.TestData;
+import ru.training.at.hw3_steps.projectUtils.CreateUser;
+import ru.training.at.hw3_steps.model.User;
 
 public class HomePage extends AbstractPage {
 

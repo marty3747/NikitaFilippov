@@ -3,8 +3,8 @@
 <suite name="All Tests Suite">
   <test verbose="2" name="All Tests Homework 3">
     <classes>
-      <class name="ru.training.at.hw3.tests.ex1.TestEx1"/>
-      <class name="ru.training.at.hw3.tests.ex2.TestEx2"/>
+      <class name="ru.training.at.hw3_steps.tests.ex1.TestEx1"/>
+      <class name="ru.training.at.hw3_steps.tests.ex2.TestEx2"/>
     </classes>
   </test>
 </suite>

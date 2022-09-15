@@ -1,19 +1,14 @@
 package ru.training.at.hw3.tests.ex2;
 
-import java.util.List;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import ru.training.at.hw2.data.TestData;
 import ru.training.at.hw3.pages.DifferentElementsPage;
-import ru.training.at.hw3.pages.HomePage;
-import ru.training.at.hw3.pages.LoginPage;
-import ru.training.at.hw3.projectUtils.BeforeClass;
 import ru.training.at.hw3.tests.BaseClass;
+
+import java.util.List;
 
 public class TestEx2 extends BaseClass {
 
@@ -22,19 +17,19 @@ public class TestEx2 extends BaseClass {
     @Test(priority = 1)
     public void runAllAssertsForEx2() {
 
-        //5.Open through the header menu Service -> Different Elements Page. Assert for titles
+        //8.Open through the header menu Service -> Different Elements Page. Assert for titles
         testPageServiceOpen();
 
-        //6.Assert for Water, Wind selected checkboxes
+        //9.Assert for Water, Wind selected checkboxes
         testSelectCheckBoxes();
 
-        //7.Assert for Selen selected radiobutton
+        //10.Assert for Selen selected radiobutton
         testSelectRadioButton();
 
-        //8.Assert for selected dropdown color 'Yellow'
+        //11.Assert for selected dropdown color 'Yellow'
         testYellowColorSelected();
 
-        //9.Assert that
+        //12.Assert that
         //•	for each checkbox there is an individual log row and value is corresponded to the status of checkbox
         //•	for radio button there is a log row and value is corresponded to the status of radio button
         //•	for dropdown there is a log row and value is corresponded to the selected value.

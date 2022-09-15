@@ -1,14 +1,18 @@
-package ru.training.at.hw3.tests.ex1;
+package ru.training.at.hw3_steps.tests.ex1;
 
-import org.openqa.selenium.WebElement;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import ru.training.at.hw2.data.TestData;
-import ru.training.at.hw3.tests.BaseClass;
+import ru.training.at.hw3_steps.data.TestData;
+import ru.training.at.hw3_steps.tests.BaseClass;
+import ru.training.at.hw3_steps.tests.steps.LoggedInHomePageSteps;
 
+@Feature("Tests for Home page")
+@Story("Testing elements of Home page")
 public class TestEx1 extends BaseClass {
 
-    private WebElement webElement;
+    private String originalPageHandle;
 
     @Test(priority = 1)
     public void runAllAssertsForEx1() {
@@ -16,14 +20,11 @@ public class TestEx1 extends BaseClass {
         //1.Assert that there are 4 items on the header section are displayed and they have proper texts
         testHeaderItemsEquals();
 
-
         //2.Assert that there are 4 images on the Index Page and they are displayed
         testImageEquals();
 
-
         //3.Assert that there are 4 texts on the Index Page under icons and they have proper text
         testTextUnderIcons();
-
 
         //4.Assert that there is the iframe with “Frame Button” exist
         testIframeButton();
@@ -36,39 +37,30 @@ public class TestEx1 extends BaseClass {
 
         //7.Assert that there are 5 items in the Left Section are displayed and they have proper text
         testLeftSectionItems();
+
     }
 
     public void testHeaderItemsEquals() {
-        for (WebElement webElement: loginPage.getListOfHeaderElements()) {
-            Assert.assertTrue(webElement.isDisplayed());
-        }
-        for (int i = 0; i < TestData.HEADER_ITEMS_TEXT.size(); i++) {
-            Assert.assertEquals(loginPage.getListOfHeaderElements().get(i).getText(), TestData.HEADER_ITEMS_TEXT.get(i));
-        }
+        LoggedInHomePageSteps.checkHeaderItemsAreDisplayed(loginPage, TestData.HEADER_ITEMS_TEXT.size());
+        LoggedInHomePageSteps.checkHeaderItemsWithCorrectTexts(loginPage, TestData.HEADER_ITEMS_TEXT);
     }
 
     public void testImageEquals() {
-        for (WebElement webElement: loginPage.getListOfImages()) {
-            Assert.assertTrue(webElement.isDisplayed());
-        }
+        LoggedInHomePageSteps.checkImagesAreDisplayed(loginPage, TestData.NUMBER_OF_IMAGES);
     }
 
     public void testTextUnderIcons() {
-        for (int i = 0; i < TestData.TEXT_UNDER_ICONS.size(); i++) {
-            Assert.assertEquals(loginPage.getListOfTextsWebElements().get(i).getText(), TestData.TEXT_UNDER_ICONS.get(i));
-        }
+        LoggedInHomePageSteps.checkTextsUnderImagesAreProperTexts(loginPage);
     }
-
 
     public void testIframeButton() {
-        Assert.assertTrue(loginPage.getIframe().isDisplayed());
+        LoggedInHomePageSteps.checkIframeIsDisplayed(loginPage);
+        originalPageHandle = webDriver.getWindowHandle();
     }
-
 
     public void testFrameButtonInIframe() {
         webDriver.switchTo().frame(loginPage.getIframe());
-        webElement = loginPage.getFrameButton();
-        Assert.assertTrue(webElement.isDisplayed());
+        LoggedInHomePageSteps.checkIframeButtonIsDisplayed(loginPage);
         webDriver.switchTo().parentFrame();
     }
 
@@ -78,9 +70,7 @@ public class TestEx1 extends BaseClass {
     }
 
     public void testLeftSectionItems(){
-        for (int i = 0; i < TestData.LEFT_SECTION_ITEMS_TEXTS.size(); i++) {
-            Assert.assertTrue(loginPage.getListOfLeftSectionButton().get(i).isDisplayed());
-            Assert.assertEquals(loginPage.getListOfLeftSectionButton().get(i).getText(), TestData.LEFT_SECTION_ITEMS_TEXTS.get(i));
-        }
+        LoggedInHomePageSteps.checkLeftSectionItemsAreDisplayed(loginPage, TestData.LEFT_SECTION_ITEMS_TEXTS.size());
+        LoggedInHomePageSteps.checkLeftSectionItemsWithProperTexts(loginPage);
     }
 }

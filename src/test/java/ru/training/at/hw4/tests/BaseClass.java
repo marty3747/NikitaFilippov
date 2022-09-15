@@ -31,13 +31,12 @@ public class BaseClass {
     protected HomePage homePage;
 
     @org.testng.annotations.BeforeClass
-    public void initializer(ITestContext testContext) {
+    public void initializer() {
         webDriver = BeforeClass.createWebDriver();
         originalWindowHandle = webDriver.getWindowHandle();
         homePage = new HomePage(webDriver);
         differentElementsPage = new DifferentElementsPage(webDriver);
         homePage.openHomePage();
-        testContext.setAttribute("driver", webDriver);
         beforeMethod();
     }
 

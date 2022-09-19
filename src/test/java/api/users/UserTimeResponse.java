@@ -1,4 +1,4 @@
-package api;
+package api.users;
 
 public class UserTimeResponse extends UserTime {
     private String updatedAt;

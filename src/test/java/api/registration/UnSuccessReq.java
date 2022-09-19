@@ -1,4 +1,4 @@
-package api;
+package api.registration;
 
 public class UnSuccessReq {
     private String error;

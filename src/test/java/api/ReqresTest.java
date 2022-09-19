@@ -1,5 +1,13 @@
 package api;
 
+import api.colors.ColorsData;
+import api.registration.Register;
+import api.registration.SuccessReg;
+import api.registration.UnSuccessReq;
+import api.spec.Specification;
+import api.users.UserData;
+import api.users.UserTime;
+import api.users.UserTimeResponse;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,6 +20,11 @@ import static io.restassured.RestAssured.given;
 public class ReqresTest {
     private static String URL = "https://reqres.in/";
 
+    /**
+     * 1. Получить список пользователей со второй страницы https://reqres.in/;
+     * 2. Убедиться что id пользователей содержаться в их avatar;
+     * 3. Убедиться, что email пользователй имеет окончание reqres.in;
+     */
     @Test
     public void checkAvatarAndTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecDK200());

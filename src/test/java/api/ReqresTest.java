@@ -46,6 +46,14 @@ public class ReqresTest {
         }
     }
 
+    /**
+     * 1. Используя сервис https://reqres.in/ протестировать регистрацию пользователя в системе;
+     * 2. Необходимо создание 2 тестов:
+     * - успешная регистрация
+     * - регистрация с ошибокой из-за отсутствия пароля
+     * 3. проверить коды ошибок.
+     */
+
     @Test
     public void successRegTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecDK200());
@@ -79,6 +87,10 @@ public class ReqresTest {
         Assert.assertEquals("Missing password", unSuccessReq.getError());
     }
 
+    /**
+     * 1. Используя сервис https://reqres.in/ убедиться, что перация LIST<RESOURCE> возвращает данные
+     * отсортированные по годам.
+     */
     @Test
     public void sortedYearsTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecDK200());
@@ -92,6 +104,10 @@ public class ReqresTest {
         Assert.assertEquals(sortedYears, years);
     }
 
+    /**
+     * 1. Используя сервис https://reqres.in/ попробовать удалить второго пользователя и сравнить
+     * статус-код
+     */
     @Test
     public void deleteUserTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecUnique(204));
@@ -101,6 +117,10 @@ public class ReqresTest {
                 .then().log().all();
     }
 
+    /**
+     * 1. Используя сервис https://reqres.in/ обновить информацию о пользователе и сравнить дату обновления
+     * с текущей датой на машине
+     */
     @Test
     public void timeTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecDK200());

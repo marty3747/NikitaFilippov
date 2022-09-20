@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
-public class ReqresNoyPojoTest {
+public class ReqresNoPojoTest {
     private static String URL = "https://reqres.in/";
 
     /**
@@ -22,7 +22,6 @@ public class ReqresNoyPojoTest {
      * 2. Убедиться что id пользователей содержаться в их avatar;
      * 3. Убедиться, что email пользователй имеет окончание reqres.in;
      */
-
     @Test
     public void checkAvatarsNoPojoTest() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecDK200());
@@ -49,8 +48,15 @@ public class ReqresNoyPojoTest {
         Assert.assertTrue(emails.stream().allMatch(x->x.endsWith("@reqres.in")));
     }
 
+    /**
+     * 1. Используя сервис https://reqres.in/ протестировать регистрацию пользователя в системе;
+     * 2. Необходимо создание 2 тестов:
+     * - успешная регистрация
+     * - регистрация с ошибокой из-за отсутствия пароля
+     * 3. проверить коды ошибок.
+     */
     @Test
-    public void successUSerRegTestNoPojo() {
+    public void successUserRegTestNoPojo() {
         Specification.installSpecification(Specification.requestSpecification(URL), Specification.responseSpecDK200());
         Map<String, String> user = new HashMap<>();
         user.put("email", "eve.holt@reqres.in");
@@ -93,7 +99,7 @@ public class ReqresNoyPojoTest {
                 .when()
                 .post("api/register")
                 .then().log().all()
-                .body("erroe", equalTo("Missing password"));
+                .body("error", equalTo("Missing password"));
     }
 
     @Test

@@ -1,0 +1,18 @@
+Kinopoisk/MainSearchBarPage.java
+ Kinopoisk.MainSearchBarPage
+Kinopoisk/AdvancedSearchPage.java
+ Kinopoisk.AdvancedSearchPage
+Base/BaseSelenideTest.java
+ Base.BaseSelenideTest
+Kinopoisk/KinoSelenideTest.java
+ Kinopoisk.KinoSelenideTest
+Kinopoisk/SearchResultPage.java
+ Kinopoisk.SearchResultPage
+Base/TestListener.java
+ Base.TestListener
+Kinopoisk/KinoTest.java
+ Kinopoisk.KinoTest
+Base/BasePage.java
+ Base.BasePage
+Base/BaseTest.java
+ Base.BaseTest

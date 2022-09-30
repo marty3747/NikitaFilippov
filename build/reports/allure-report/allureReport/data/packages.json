@@ -1,0 +1,164 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "gitlabTests.UiTests",
+    "children" : [ {
+      "name" : "calcMinusTest",
+      "uid" : "7f94981806d68231",
+      "parentUid" : "b120e7eaa57a6d817987c77d4f22d864",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664375203939,
+        "stop" : 1664375208221,
+        "duration" : 4282
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "calcDevideTest",
+      "uid" : "82663d6977888e5a",
+      "parentUid" : "b120e7eaa57a6d817987c77d4f22d864",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664375208231,
+        "stop" : 1664375211970,
+        "duration" : 3739
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "calcPlusTest",
+      "uid" : "75c8128507ee7553",
+      "parentUid" : "b120e7eaa57a6d817987c77d4f22d864",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664375211983,
+        "stop" : 1664375216118,
+        "duration" : 4135
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "calcMultipyTest",
+      "uid" : "5bd5cbe578fa01c7",
+      "parentUid" : "b120e7eaa57a6d817987c77d4f22d864",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664375216127,
+        "stop" : 1664375219611,
+        "duration" : 3484
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "calcPlusTest2",
+      "uid" : "586c4d9ffa5899e8",
+      "parentUid" : "b120e7eaa57a6d817987c77d4f22d864",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664375415976,
+        "stop" : 1664375426975,
+        "duration" : 10999
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "gitlabTests.UiTests"
+  }, {
+    "name" : "gitLabTests",
+    "children" : [ {
+      "name" : "ApiTests",
+      "children" : [ {
+        "name" : "crewMembersIs30",
+        "uid" : "836760fcb6fb8a27",
+        "parentUid" : "aa6ed56549709c5326ac1faef8d47e74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664376195870,
+          "stop" : 1664376204498,
+          "duration" : 8628
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkLinksIsFour",
+        "uid" : "26bb10d591d17225",
+        "parentUid" : "aa6ed56549709c5326ac1faef8d47e74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664376204694,
+          "stop" : 1664376207732,
+          "duration" : 3038
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "firstMemberIsRobert",
+        "uid" : "aa7cf90347393c82",
+        "parentUid" : "aa6ed56549709c5326ac1faef8d47e74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664376207750,
+          "stop" : 1664376208449,
+          "duration" : 699
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkCeoIsElonMusk",
+        "uid" : "11d7a1dd3788de95",
+        "parentUid" : "aa6ed56549709c5326ac1faef8d47e74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664376208461,
+          "stop" : 1664376209411,
+          "duration" : 950
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "lastMemberHasNoLaunches",
+        "uid" : "6ddb708747118ec3",
+        "parentUid" : "aa6ed56549709c5326ac1faef8d47e74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664376209421,
+          "stop" : 1664376210444,
+          "duration" : 1023
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aa6ed56549709c5326ac1faef8d47e74"
+    }, {
+      "name" : "UiTests",
+      "children" : [ {
+        "name" : "calcPlusTest",
+        "uid" : "ffae6b7412188acb",
+        "parentUid" : "38ff4daad6227399b609880e9608ed97",
+        "status" : "passed",
+        "time" : {
+          "start" : 1664376267536,
+          "stop" : 1664376281837,
+          "duration" : 14301
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "38ff4daad6227399b609880e9608ed97"
+    } ],
+    "uid" : "7df300f6661e88da0da7222b7db83833"
+  } ]
+}

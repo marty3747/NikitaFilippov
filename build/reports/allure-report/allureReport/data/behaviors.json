@@ -1,0 +1,148 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "calcMinusTest()",
+    "uid" : "7f94981806d68231",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664375203939,
+      "stop" : 1664375208221,
+      "duration" : 4282
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "calcDevideTest()",
+    "uid" : "82663d6977888e5a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664375208231,
+      "stop" : 1664375211970,
+      "duration" : 3739
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "calcPlusTest()",
+    "uid" : "75c8128507ee7553",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664375211983,
+      "stop" : 1664375216118,
+      "duration" : 4135
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "calcMultipyTest()",
+    "uid" : "5bd5cbe578fa01c7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664375216127,
+      "stop" : 1664375219611,
+      "duration" : 3484
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "calcPlusTest2()",
+    "uid" : "586c4d9ffa5899e8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664375415976,
+      "stop" : 1664375426975,
+      "duration" : 10999
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "crewMembersIs30()",
+    "uid" : "836760fcb6fb8a27",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664376195870,
+      "stop" : 1664376204498,
+      "duration" : 8628
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "checkLinksIsFour()",
+    "uid" : "26bb10d591d17225",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664376204694,
+      "stop" : 1664376207732,
+      "duration" : 3038
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "firstMemberIsRobert()",
+    "uid" : "aa7cf90347393c82",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664376207750,
+      "stop" : 1664376208449,
+      "duration" : 699
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "checkCeoIsElonMusk()",
+    "uid" : "11d7a1dd3788de95",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664376208461,
+      "stop" : 1664376209411,
+      "duration" : 950
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "lastMemberHasNoLaunches()",
+    "uid" : "6ddb708747118ec3",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664376209421,
+      "stop" : 1664376210444,
+      "duration" : 1023
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "calcPlusTest()",
+    "uid" : "ffae6b7412188acb",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1664376267536,
+      "stop" : 1664376281837,
+      "duration" : 14301
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

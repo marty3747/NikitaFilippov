@@ -1,0 +1,98 @@
+{
+  "uid" : "75c8128507ee7553",
+  "name" : "calcPlusTest()",
+  "fullName" : "gitlabTests.UiTests.calcPlusTest",
+  "historyId" : "1da806816b5f30d53e74ae8a35c4cbf",
+  "time" : {
+    "start" : 1664375211983,
+    "stop" : 1664375216118,
+    "duration" : 4135
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1664375191876,
+      "stop" : 1664375191995,
+      "duration" : 119
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "openPage",
+    "time" : {
+      "start" : 1664375211984,
+      "stop" : 1664375212851,
+      "duration" : 867
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "UI"
+  }, {
+    "name" : "host",
+    "value" : "Computer"
+  }, {
+    "name" : "thread",
+    "value" : "8080@Computer.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "gitlabTests.UiTests"
+  }, {
+    "name" : "testClass",
+    "value" : "gitlabTests.UiTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "calcPlusTest"
+  }, {
+    "name" : "suite",
+    "value" : "gitlabTests.UiTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7719c33180105611",
+      "status" : "passed",
+      "time" : {
+        "start" : 1664375136421,
+        "stop" : 1664375140228,
+        "duration" : 3807
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "UI" ]
+  },
+  "source" : "75c8128507ee7553.json",
+  "parameterValues" : [ ]
+}

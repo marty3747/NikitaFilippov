@@ -2,9 +2,6 @@ package tests;
 
 import data.TestData;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import pages.HomePage;
 import pages.LoginPage;

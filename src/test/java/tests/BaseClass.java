@@ -50,8 +50,8 @@ public class BaseClass {
     }
 
     //Close Browser
-   /* @AfterClass()
+    @AfterClass()
     public void clear() {
         webDriver.close();
-    }*/
+    }
 }
